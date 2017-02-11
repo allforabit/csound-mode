@@ -185,7 +185,7 @@
   (add-hook 'csound-mode-hook (lambda ()
                                 (when (fboundp 'module-load)
                                   (csound-mode--message-buffer-create)
-                                  ;; (csound-live-interaction--boot-instance)
+                                  (csound-live-interaction--boot-instance)
                                   )))
   (run-hooks 'csound-mode-hook))
 
