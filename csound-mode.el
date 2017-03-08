@@ -190,7 +190,7 @@
   (run-hooks 'csound-mode-hook))
 
 (eval-after-load 'csound-mode
-  '(progn     
+  '(progn
      (define-auto-insert "\\.csd\\'" 'csound-new-csd)
      (add-to-list 'auto-mode-alist '("\\.csd\\'\\|\\.orc\\'\\|\\.sco\\'" . csound-mode))))
 
